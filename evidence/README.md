@@ -1,5 +1,20 @@
 # Phân tích kết quả — V1 vs V2
 
+## 0. Liên kết
+
+| | |
+|---|---|
+| **Repository** | https://github.com/Tuan-Nguyen-Minhh/K4-L3-DAY22-NguyenMinhTuan-2A202602850-LLMOpsPromptVersioning |
+| **LangSmith project** (`day22-lab`) | https://smith.langchain.com/o/a63d6670-ed09-4964-84de-11ee6a286c8c/projects/p/7a04282f-5476-4d21-a036-e3708a334a8e |
+
+Trên LangSmith, lọc theo `Run Name` để xem từng nhóm trace:
+
+| Run name | Checkpoint | Số trace |
+|---|---|---|
+| `rag-query` | Nhiệm vụ 1 | 50 |
+| `ab-rag-query` | Nhiệm vụ 2 | 50 |
+| `ragas evaluation` | Nhiệm vụ 3 | 4 (2 phiên bản × 2 lần chạy) |
+
 Tài liệu này giải thích **vì sao hai prompt khác nhau cho ra điểm khác nhau**, dựa trên
 kết quả thực đo được trong Checkpoint 3 (`03_ragas_report.json`).
 

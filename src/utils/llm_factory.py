@@ -69,6 +69,14 @@ def get_llm(provider: str = None, temperature: float = 0.0):
             temperature=temperature,
         )
 
+    elif provider == "mistral":
+        from langchain_mistralai import ChatMistralAI
+        return ChatMistralAI(
+            model=config.MISTRAL_MODEL,
+            api_key=config.MISTRAL_API_KEY,
+            temperature=temperature,
+        )
+
     elif provider == "openrouter":
         # OpenRouter dùng OpenAI-compatible API
         from langchain_openai import ChatOpenAI
@@ -144,6 +152,28 @@ def get_embeddings(provider: str = None):
             model=config.OPENAI_EMBEDDING_MODEL,
             api_key=config.OPENAI_API_KEY,
         )
+
+    elif provider == "mistral":
+        # Mistral co embeddings rieng (mistral-embed-2312).
+        # Free tier co the khoa endpoint nay, nen probe truoc: neu fail
+        # thi fallback ve Gemini embeddings (cung kieu xu ly nhu anthropic).
+        from langchain_mistralai import MistralAIEmbeddings
+        from langchain_google_genai import GoogleGenerativeAIEmbeddings
+
+        try:
+            emb = MistralAIEmbeddings(
+                model=config.MISTRAL_EMBEDDING_MODEL,
+                api_key=config.MISTRAL_API_KEY,
+            )
+            emb.embed_query("ping")          # probe: xac nhan tier cho phep
+            return emb
+        except Exception as e:
+            print(f"⚠️  Mistral embeddings không dùng được ({type(e).__name__}) "
+                  "— đang dùng Gemini embeddings thay thế.")
+            return GoogleGenerativeAIEmbeddings(
+                model=config.GEMINI_EMBEDDING_MODEL,
+                google_api_key=config.GOOGLE_API_KEY,
+            )
 
     elif provider == "ollama":
         from langchain_ollama import OllamaEmbeddings

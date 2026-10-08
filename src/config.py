@@ -51,6 +51,14 @@ OPENROUTER_EMBEDDING_MODEL = os.getenv(
     "OPENROUTER_EMBEDDING_MODEL", "nvidia/nemotron-3-embed-1b:free"
 )
 
+# ── Mistral ────────────────────────────────────────────────────────────────
+# Free tier: ~1 request/giây, ~1 tỷ token/tháng
+MISTRAL_API_KEY  = os.getenv("MISTRAL_API_KEY", "")
+MISTRAL_MODEL    = os.getenv("MISTRAL_MODEL", "ministral-3b-2512")
+MISTRAL_EMBEDDING_MODEL = os.getenv("MISTRAL_EMBEDDING_MODEL", "mistral-embed-2312")
+MISTRAL_BASE_URL = os.getenv("MISTRAL_BASE_URL", "https://api.mistral.ai/v1")
+
+
 # ── LangSmith ─────────────────────────────────────────────────────────────
 LANGSMITH_API_KEY = os.getenv("LANGCHAIN_API_KEY", "")
 LANGSMITH_PROJECT = os.getenv("LANGCHAIN_PROJECT", "day22-lab")
@@ -74,6 +82,8 @@ def validate() -> bool:
         missing.append("ANTHROPIC_API_KEY")
     elif PROVIDER == "openrouter" and not OPENROUTER_API_KEY:
         missing.append("OPENROUTER_API_KEY")
+    elif PROVIDER == "mistral" and not MISTRAL_API_KEY:
+        missing.append("MISTRAL_API_KEY")
     # Ollama: không cần API key
 
     if missing:

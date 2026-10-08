@@ -1,0 +1,141 @@
+============================================================
+  Bước 3: RAGAS Evaluation
+============================================================
+✅ Config OK  |  Provider: MISTRAL  |  Project: day22-lab
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+🔨 Đang tạo FAISS index từ 107 chunks ...
+✅ FAISS vectorstore đã sẵn sàng.
+
+🚀 Đang chạy 50 câu hỏi với prompt v1 ...
+  [01/50] What are the three main types of machine learning?
+  [02/50] What is overfitting in machine learning?
+  [03/50] Explain the bias-variance tradeoff.
+  [04/50] How does regularization prevent overfitting?
+  [05/50] What is cross-validation?
+  [06/50] What is backpropagation?
+  [07/50] What are Convolutional Neural Networks primarily used for?
+  [08/50] How do LSTM networks address the vanishing gradient problem?
+  [09/50] What activation functions are commonly used in neural networ
+  [10/50] What is the role of pooling layers in CNNs?
+  [11/50] What is the transformer architecture?
+  [12/50] What are word embeddings?
+  [13/50] What is transfer learning in NLP?
+  [14/50] How does BERT handle language understanding?
+  [15/50] What is self-attention in transformers?
+  [16/50] What is GPT and how is it trained?
+  [17/50] What is instruction tuning?
+  [18/50] What is RLHF?
+  [19/50] What is chain-of-thought prompting?
+  [20/50] What is the context length of GPT-4?
+  [21/50] What is Retrieval-Augmented Generation?
+  [22/50] What are the main components of a RAG pipeline?
+  [23/50] What is dense retrieval?
+  [24/50] Why is chunking strategy important in RAG?
+  [25/50] What advanced RAG techniques exist beyond basic retrieval?
+  [26/50] What are vector databases used for?
+  [27/50] What is FAISS?
+  [28/50] How do text embeddings capture semantic meaning?
+  [29/50] What is HNSW?
+  [30/50] What is hybrid search in vector databases?
+  [31/50] What is LangChain?
+  [32/50] What is LangChain Expression Language (LCEL)?
+  [33/50] What is LangGraph?
+  [34/50] What memory types does LangChain support?
+  [35/50] What are LangChain retrievers?
+  [36/50] What is LangSmith?
+  [37/50] What information do LangSmith traces capture?
+  [38/50] What is the LangSmith Prompt Hub?
+  [39/50] How does LangSmith help monitor production LLM applications?
+  [40/50] What are LangSmith datasets used for?
+  [41/50] What is RAGAS?
+  [42/50] How does RAGAS compute faithfulness?
+  [43/50] What is answer relevancy in RAGAS?
+  [44/50] What is context recall in RAGAS?
+  [45/50] What inputs does RAGAS evaluation require?
+  [46/50] What is Guardrails AI?
+  [47/50] What is PII and why is it important to detect in LLM respons
+  [48/50] What does structured output validation ensure?
+  [49/50] What is Constitutional AI?
+  [50/50] What are common AI safety concerns with LLMs?
+
+🚀 Đang chạy 50 câu hỏi với prompt v2 ...
+  [01/50] What are the three main types of machine learning?
+  [02/50] What is overfitting in machine learning?
+  [03/50] Explain the bias-variance tradeoff.
+  [04/50] How does regularization prevent overfitting?
+  [05/50] What is cross-validation?
+  [06/50] What is backpropagation?
+  [07/50] What are Convolutional Neural Networks primarily used for?
+  [08/50] How do LSTM networks address the vanishing gradient problem?
+  [09/50] What activation functions are commonly used in neural networ
+  [10/50] What is the role of pooling layers in CNNs?
+  [11/50] What is the transformer architecture?
+  [12/50] What are word embeddings?
+  [13/50] What is transfer learning in NLP?
+  [14/50] How does BERT handle language understanding?
+  [15/50] What is self-attention in transformers?
+  [16/50] What is GPT and how is it trained?
+  [17/50] What is instruction tuning?
+  [18/50] What is RLHF?
+  [19/50] What is chain-of-thought prompting?
+  [20/50] What is the context length of GPT-4?
+  [21/50] What is Retrieval-Augmented Generation?
+  [22/50] What are the main components of a RAG pipeline?
+  [23/50] What is dense retrieval?
+  [24/50] Why is chunking strategy important in RAG?
+  [25/50] What advanced RAG techniques exist beyond basic retrieval?
+  [26/50] What are vector databases used for?
+  [27/50] What is FAISS?
+  [28/50] How do text embeddings capture semantic meaning?
+  [29/50] What is HNSW?
+  [30/50] What is hybrid search in vector databases?
+  [31/50] What is LangChain?
+  [32/50] What is LangChain Expression Language (LCEL)?
+  [33/50] What is LangGraph?
+  [34/50] What memory types does LangChain support?
+  [35/50] What are LangChain retrievers?
+  [36/50] What is LangSmith?
+  [37/50] What information do LangSmith traces capture?
+  [38/50] What is the LangSmith Prompt Hub?
+  [39/50] How does LangSmith help monitor production LLM applications?
+  [40/50] What are LangSmith datasets used for?
+  [41/50] What is RAGAS?
+  [42/50] How does RAGAS compute faithfulness?
+  [43/50] What is answer relevancy in RAGAS?
+  [44/50] What is context recall in RAGAS?
+  [45/50] What inputs does RAGAS evaluation require?
+  [46/50] What is Guardrails AI?
+  [47/50] What is PII and why is it important to detect in LLM respons
+  [48/50] What does structured output validation ensure?
+  [49/50] What is Constitutional AI?
+  [50/50] What are common AI safety concerns with LLMs?
+
+📐 Đang đánh giá RAGAS cho prompt v1 ... (vui lòng chờ ~5-10 phút)
+Evaluating:   0%|          | 0/200 [00:00<?, ?it/s]Evaluating:   0%|          | 1/200 [00:08<27:40,  8.34s/it]Evaluating:   1%|          | 2/200 [00:18<31:57,  9.68s/it]Evaluating:   2%|▏         | 4/200 [00:24<17:09,  5.25s/it]Evaluating:   3%|▎         | 6/200 [00:31<14:24,  4.45s/it]Evaluating:   4%|▎         | 7/200 [00:51<26:58,  8.39s/it]Evaluating:   5%|▌         | 10/200 [01:02<18:36,  5.88s/it]Evaluating:   6%|▌         | 11/200 [01:15<23:26,  7.44s/it]Evaluating:   7%|▋         | 14/200 [01:24<16:44,  5.40s/it]Evaluating:   8%|▊         | 15/200 [01:37<20:42,  6.72s/it]Evaluating:   9%|▉         | 18/200 [01:51<17:37,  5.81s/it]Evaluating:  10%|█         | 20/200 [01:57<15:02,  5.01s/it]Evaluating:  10%|█         | 21/200 [01:59<13:10,  4.41s/it]Evaluating:  11%|█         | 22/200 [02:01<11:59,  4.04s/it]Evaluating:  12%|█▏        | 23/200 [02:09<14:28,  4.90s/it]Evaluating:  12%|█▏        | 24/200 [02:21<19:31,  6.66s/it]Evaluating:  13%|█▎        | 26/200 [02:25<13:31,  4.66s/it]Evaluating:  14%|█▎        | 27/200 [02:32<15:20,  5.32s/it]Evaluating:  14%|█▍        | 28/200 [02:36<13:40,  4.77s/it]Evaluating:  14%|█▍        | 29/200 [02:57<25:44,  9.03s/it]Evaluating:  16%|█▋        | 33/200 [03:02<12:10,  4.38s/it]Evaluating:  17%|█▋        | 34/200 [03:03<10:47,  3.90s/it]Evaluating:  18%|█▊        | 35/200 [03:22<18:51,  6.86s/it]Evaluating:  19%|█▉        | 38/200 [03:24<10:50,  4.02s/it]Evaluating:  20%|█▉        | 39/200 [03:33<13:03,  4.87s/it]Evaluating:  20%|██        | 40/200 [03:50<19:35,  7.35s/it]Evaluating:  22%|██▏       | 43/200 [04:03<15:27,  5.91s/it]Evaluating:  22%|██▎       | 45/200 [04:08<12:43,  4.93s/it]Evaluating:  23%|██▎       | 46/200 [04:10<11:13,  4.37s/it]Evaluating:  24%|██▎       | 47/200 [04:13<10:38,  4.18s/it]Evaluating:  24%|██▍       | 48/200 [04:16<09:35,  3.79s/it]Evaluating:  24%|██▍       | 49/200 [04:29<15:29,  6.16s/it]Evaluating:  25%|██▌       | 50/200 [04:34<14:24,  5.76s/it]Evaluating:  26%|██▌       | 51/200 [04:43<16:21,  6.59s/it]Evaluating:  26%|██▌       | 52/200 [04:45<13:10,  5.34s/it]Evaluating:  26%|██▋       | 53/200 [05:03<21:40,  8.85s/it]Evaluating:  27%|██▋       | 54/200 [05:11<20:57,  8.61s/it]Evaluating:  28%|██▊       | 56/200 [05:15<13:29,  5.62s/it]Evaluating:  29%|██▉       | 58/200 [05:18<09:29,  4.01s/it]Evaluating:  30%|██▉       | 59/200 [06:07<32:56, 14.02s/it]Evaluating:  30%|███       | 60/200 [06:09<25:48, 11.06s/it]Evaluating:  30%|███       | 61/200 [06:12<20:46,  8.97s/it]Evaluating:  31%|███       | 62/200 [06:20<20:18,  8.83s/it]Evaluating:  32%|███▏      | 64/200 [06:23<12:51,  5.67s/it]Evaluating:  33%|███▎      | 66/200 [06:30<10:54,  4.89s/it]Evaluating:  34%|███▎      | 67/200 [06:32<09:18,  4.20s/it]Evaluating:  34%|███▍      | 68/200 [06:39<10:41,  4.86s/it]Evaluating:  34%|███▍      | 69/200 [06:41<08:50,  4.05s/it]Evaluating:  35%|███▌      | 70/200 [06:54<13:53,  6.41s/it]Evaluating:  36%|███▋      | 73/200 [06:55<06:57,  3.28s/it]Evaluating:  37%|███▋      | 74/200 [06:57<06:11,  2.95s/it]Evaluating:  38%|███▊      | 75/200 [07:03<07:26,  3.57s/it]Evaluating:  38%|███▊      | 76/200 [07:13<10:40,  5.17s/it]Evaluating:  40%|████      | 80/200 [07:16<05:23,  2.69s/it]Evaluating:  40%|████      | 81/200 [07:22<06:13,  3.14s/it]Evaluating:  41%|████      | 82/200 [07:31<08:37,  4.38s/it]Evaluating:  42%|████▏     | 84/200 [07:33<05:57,  3.08s/it]Evaluating:  42%|████▎     | 85/200 [07:36<05:52,  3.07s/it]Evaluating:  43%|████▎     | 86/200 [07:47<09:29,  5.00s/it]Evaluating:  44%|████▍     | 88/200 [07:51<07:10,  3.85s/it]Evaluating:  44%|████▍     | 89/200 [07:58<08:01,  4.34s/it]Evaluating:  45%|████▌     | 90/200 [08:02<08:03,  4.39s/it]Evaluating:  46%|████▌     | 91/200 [08:07<08:05,  4.45s/it]Evaluating:  47%|████▋     | 94/200 [08:17<06:56,  3.93s/it]Evaluating:  48%|████▊     | 96/200 [08:20<05:26,  3.14s/it]Evaluating:  48%|████▊     | 97/200 [08:22<04:51,  2.83s/it]Evaluating:  49%|████▉     | 98/200 [08:27<05:43,  3.37s/it]Evaluating:  50%|████▉     | 99/200 [09:17<24:14, 14.40s/it]Retrying langchain_mistralai.chat_models.acompletion_with_retry.<locals>._completion_with_retry in 4 seconds as it raised ReadError: .
+Evaluating:  52%|█████▏    | 103/200 [09:22<11:02,  6.83s/it]Evaluating:  52%|█████▏    | 104/200 [09:35<12:30,  7.82s/it]Evaluating:  52%|█████▎    | 105/200 [09:36<10:26,  6.59s/it]Evaluating:  53%|█████▎    | 106/200 [09:38<08:35,  5.49s/it]Evaluating:  54%|█████▎    | 107/200 [09:43<08:13,  5.30s/it]Evaluating:  54%|█████▍    | 108/200 [09:49<08:28,  5.53s/it]Evaluating:  55%|█████▍    | 109/200 [09:50<06:47,  4.48s/it]Evaluating:  55%|█████▌    | 110/200 [09:56<07:10,  4.78s/it]Evaluating:  56%|█████▌    | 112/200 [09:59<04:49,  3.29s/it]Evaluating:  56%|█████▋    | 113/200 [10:10<07:37,  5.26s/it]Evaluating:  57%|█████▊    | 115/200 [10:12<04:52,  3.44s/it]Evaluating:  58%|█████▊    | 116/200 [10:17<05:24,  3.86s/it]Evaluating:  58%|█████▊    | 117/200 [10:26<07:09,  5.18s/it]Evaluating:  60%|██████    | 120/200 [10:40<06:30,  4.88s/it]Evaluating:  62%|██████▏   | 123/200 [10:42<03:55,  3.05s/it]Evaluating:  62%|██████▏   | 124/200 [10:43<03:32,  2.80s/it]Evaluating:  62%|██████▎   | 125/200 [10:47<03:35,  2.87s/it]Evaluating:  63%|██████▎   | 126/200 [10:52<04:13,  3.43s/it]Evaluating:  64%|██████▎   | 127/200 [10:55<04:04,  3.35s/it]Evaluating:  64%|██████▍   | 128/200 [11:00<04:24,  3.68s/it]Evaluating:  64%|██████▍   | 129/200 [11:03<04:09,  3.51s/it]Evaluating:  65%|██████▌   | 130/200 [11:19<08:00,  6.87s/it]Evaluating:  66%|██████▋   | 133/200 [11:24<04:37,  4.14s/it]Evaluating:  67%|██████▋   | 134/200 [11:26<03:57,  3.60s/it]Evaluating:  68%|██████▊   | 136/200 [11:27<02:43,  2.55s/it]Evaluating:  68%|██████▊   | 137/200 [11:29<02:27,  2.34s/it]Evaluating:  69%|██████▉   | 138/200 [11:33<02:52,  2.79s/it]Evaluating:  70%|██████▉   | 139/200 [11:42<04:28,  4.40s/it]Evaluating:  70%|███████   | 140/200 [11:44<03:49,  3.82s/it]Evaluating:  70%|███████   | 141/200 [11:50<04:17,  4.37s/it]Evaluating:  71%|███████   | 142/200 [11:56<04:41,  4.85s/it]Evaluating:  72%|███████▏  | 143/200 [12:12<07:28,  7.87s/it]Evaluating:  73%|███████▎  | 146/200 [12:23<04:58,  5.52s/it]Evaluating:  74%|███████▍  | 149/200 [12:26<03:01,  3.56s/it]Evaluating:  76%|███████▌  | 151/200 [12:32<02:51,  3.49s/it]Evaluating:  76%|███████▌  | 152/200 [12:36<02:45,  3.45s/it]Evaluating:  76%|███████▋  | 153/200 [12:39<02:38,  3.36s/it]Evaluating:  78%|███████▊  | 155/200 [12:42<02:01,  2.71s/it]Evaluating:  78%|███████▊  | 156/200 [12:43<01:48,  2.47s/it]Evaluating:  78%|███████▊  | 157/200 [12:53<02:54,  4.05s/it]Evaluating:  79%|███████▉  | 158/200 [12:57<02:55,  4.18s/it]Evaluating:  80%|███████▉  | 159/200 [13:05<03:25,  5.01s/it]Evaluating:  80%|████████  | 160/200 [13:09<03:15,  4.89s/it]Evaluating:  81%|████████  | 162/200 [13:11<01:57,  3.09s/it]Evaluating:  82%|████████▏ | 163/200 [13:16<02:14,  3.65s/it]Evaluating:  82%|████████▏ | 164/200 [13:19<02:06,  3.51s/it]Evaluating:  82%|████████▎ | 165/200 [13:22<01:58,  3.38s/it]Evaluating:  83%|████████▎ | 166/200 [13:27<02:10,  3.85s/it]Evaluating:  84%|████████▎ | 167/200 [13:31<02:00,  3.65s/it]Evaluating:  84%|████████▍ | 169/200 [13:41<02:14,  4.33s/it]Evaluating:  85%|████████▌ | 170/200 [13:47<02:22,  4.77s/it]Evaluating:  86%|████████▌ | 172/200 [13:56<02:08,  4.59s/it]Evaluating:  86%|████████▋ | 173/200 [14:05<02:32,  5.64s/it]Evaluating:  88%|████████▊ | 176/200 [14:10<01:29,  3.73s/it]Evaluating:  88%|████████▊ | 177/200 [14:18<01:43,  4.52s/it]Evaluating:  90%|█████████ | 180/200 [14:20<00:54,  2.74s/it]Evaluating:  90%|█████████ | 181/200 [14:23<00:54,  2.85s/it]Evaluating:  91%|█████████ | 182/200 [14:35<01:23,  4.66s/it]Evaluating:  92%|█████████▏| 184/200 [14:40<01:00,  3.79s/it]Evaluating:  92%|█████████▎| 185/200 [14:47<01:06,  4.46s/it]Evaluating:  94%|█████████▍| 188/200 [14:50<00:34,  2.87s/it]Evaluating:  95%|█████████▌| 190/200 [14:55<00:27,  2.73s/it]Evaluating:  96%|█████████▌| 191/200 [14:59<00:27,  3.01s/it]Evaluating:  96%|█████████▌| 192/200 [15:05<00:29,  3.66s/it]Evaluating:  97%|█████████▋| 194/200 [15:17<00:27,  4.56s/it]Evaluating:  98%|█████████▊| 196/200 [15:20<00:14,  3.52s/it]Evaluating:  98%|█████████▊| 197/200 [15:26<00:11,  3.89s/it]Evaluating: 100%|█████████▉| 199/200 [15:30<00:03,  3.22s/it]Evaluating: 100%|██████████| 200/200 [15:31<00:00,  2.89s/it]Evaluating: 100%|██████████| 200/200 [15:31<00:00,  4.66s/it]
+
+📊 Kết quả RAGAS — Prompt V1:
+  faithfulness                  : 0.9135 ⭐
+  answer_relevancy              : 0.9133
+  context_recall                : 0.9800
+  context_precision             : 0.9683
+
+📐 Đang đánh giá RAGAS cho prompt v2 ... (vui lòng chờ ~5-10 phút)
+Evaluating:   0%|          | 0/200 [00:00<?, ?it/s]Evaluating:   0%|          | 1/200 [00:11<38:24, 11.58s/it]Evaluating:   2%|▏         | 3/200 [00:26<28:21,  8.64s/it]Evaluating:   2%|▎         | 5/200 [00:34<19:51,  6.11s/it]Evaluating:   4%|▍         | 8/200 [00:35<10:12,  3.19s/it]Evaluating:   4%|▍         | 9/200 [00:39<10:32,  3.31s/it]Evaluating:   5%|▌         | 10/200 [00:43<10:37,  3.35s/it]Evaluating:   6%|▌         | 11/200 [00:48<12:06,  3.85s/it]Evaluating:   6%|▌         | 12/200 [00:55<14:35,  4.65s/it]Evaluating:   6%|▋         | 13/200 [00:57<11:57,  3.84s/it]Evaluating:   7%|▋         | 14/200 [00:58<09:58,  3.22s/it]Evaluating:   8%|▊         | 15/200 [01:10<16:56,  5.49s/it]Evaluating:   8%|▊         | 16/200 [01:13<14:52,  4.85s/it]Evaluating:   8%|▊         | 17/200 [01:18<15:18,  5.02s/it]Evaluating:   9%|▉         | 18/200 [01:22<14:34,  4.80s/it]Evaluating:  10%|█         | 20/200 [01:27<10:50,  3.62s/it]Evaluating:  10%|█         | 21/200 [01:31<11:22,  3.81s/it]Evaluating:  11%|█         | 22/200 [01:35<11:07,  3.75s/it]Evaluating:  12%|█▏        | 23/200 [01:38<10:35,  3.59s/it]Evaluating:  12%|█▎        | 25/200 [01:45<10:09,  3.48s/it]Evaluating:  13%|█▎        | 26/200 [01:50<11:20,  3.91s/it]Evaluating:  14%|█▎        | 27/200 [02:02<17:04,  5.92s/it]Evaluating:  16%|█▌        | 31/200 [02:07<09:07,  3.24s/it]Evaluating:  16%|█▌        | 32/200 [02:09<08:18,  2.97s/it]Evaluating:  16%|█▋        | 33/200 [02:14<09:28,  3.40s/it]Evaluating:  17%|█▋        | 34/200 [02:17<09:16,  3.35s/it]Evaluating:  18%|█▊        | 35/200 [02:25<12:06,  4.41s/it]Evaluating:  18%|█▊        | 36/200 [02:35<15:30,  5.67s/it]Evaluating:  20%|█▉        | 39/200 [02:39<09:32,  3.56s/it]Evaluating:  21%|██        | 42/200 [02:43<06:33,  2.49s/it]Evaluating:  22%|██▏       | 43/200 [02:46<06:48,  2.60s/it]Evaluating:  22%|██▏       | 44/200 [02:52<08:37,  3.32s/it]Evaluating:  22%|██▎       | 45/200 [02:57<09:28,  3.66s/it]Evaluating:  23%|██▎       | 46/200 [03:04<11:24,  4.45s/it]Evaluating:  24%|██▍       | 48/200 [03:07<08:19,  3.29s/it]Evaluating:  24%|██▍       | 49/200 [03:14<10:11,  4.05s/it]Evaluating:  25%|██▌       | 50/200 [03:21<12:21,  4.94s/it]Evaluating:  26%|██▌       | 52/200 [03:23<07:58,  3.24s/it]Evaluating:  26%|██▋       | 53/200 [03:28<08:58,  3.66s/it]Evaluating:  27%|██▋       | 54/200 [03:36<11:31,  4.74s/it]Evaluating:  28%|██▊       | 56/200 [03:38<07:31,  3.14s/it]Evaluating:  28%|██▊       | 57/200 [03:41<07:42,  3.24s/it]Evaluating:  29%|██▉       | 58/200 [03:47<09:07,  3.85s/it]Evaluating:  30%|██▉       | 59/200 [03:50<08:40,  3.69s/it]Evaluating:  30%|███       | 60/200 [03:54<08:18,  3.56s/it]Evaluating:  30%|███       | 61/200 [03:57<08:02,  3.47s/it]Evaluating:  31%|███       | 62/200 [04:03<09:52,  4.30s/it]Evaluating:  32%|███▎      | 65/200 [04:09<06:47,  3.02s/it]Evaluating:  34%|███▎      | 67/200 [04:13<05:56,  2.68s/it]Evaluating:  34%|███▍      | 68/200 [04:20<07:29,  3.41s/it]Evaluating:  34%|███▍      | 69/200 [04:26<08:55,  4.09s/it]Evaluating:  36%|███▌      | 71/200 [04:28<06:04,  2.83s/it]Evaluating:  36%|███▌      | 72/200 [04:45<12:45,  5.98s/it]Evaluating:  37%|███▋      | 74/200 [04:48<09:01,  4.30s/it]Evaluating:  38%|███▊      | 75/200 [04:50<07:43,  3.71s/it]Evaluating:  38%|███▊      | 77/200 [04:53<06:01,  2.94s/it]Evaluating:  39%|███▉      | 78/200 [05:04<09:33,  4.70s/it]Evaluating:  40%|████      | 81/200 [05:19<09:25,  4.75s/it]Evaluating:  42%|████▏     | 83/200 [05:20<06:51,  3.51s/it]Evaluating:  42%|████▏     | 84/200 [05:22<06:07,  3.16s/it]Evaluating:  42%|████▎     | 85/200 [05:24<05:31,  2.89s/it]Evaluating:  43%|████▎     | 86/200 [05:37<09:42,  5.11s/it]Evaluating:  44%|████▍     | 89/200 [05:41<06:13,  3.37s/it]Evaluating:  45%|████▌     | 90/200 [05:45<06:23,  3.49s/it]Evaluating:  46%|████▌     | 91/200 [05:47<05:34,  3.07s/it]Evaluating:  46%|████▌     | 92/200 [05:49<05:01,  2.80s/it]Evaluating:  46%|████▋     | 93/200 [05:53<05:50,  3.28s/it]Evaluating:  48%|████▊     | 95/200 [05:57<04:29,  2.57s/it]Evaluating:  48%|████▊     | 96/200 [06:03<05:50,  3.37s/it]Evaluating:  48%|████▊     | 97/200 [06:04<05:03,  2.94s/it]Evaluating:  49%|████▉     | 98/200 [06:08<05:09,  3.04s/it]Evaluating:  50%|████▉     | 99/200 [06:12<05:54,  3.51s/it]Evaluating:  50%|█████     | 100/200 [06:19<07:32,  4.52s/it]Evaluating:  50%|█████     | 101/200 [06:21<06:03,  3.67s/it]Evaluating:  51%|█████     | 102/200 [06:23<04:59,  3.05s/it]Evaluating:  52%|█████▏    | 103/200 [06:28<06:14,  3.87s/it]Evaluating:  52%|█████▏    | 104/200 [06:41<10:18,  6.44s/it]Evaluating:  54%|█████▎    | 107/200 [06:46<05:46,  3.73s/it]Evaluating:  54%|█████▍    | 108/200 [06:51<06:03,  3.95s/it]Evaluating:  55%|█████▍    | 109/200 [06:54<05:43,  3.77s/it]Evaluating:  55%|█████▌    | 110/200 [06:55<04:50,  3.23s/it]Evaluating:  56%|█████▌    | 111/200 [06:57<04:08,  2.79s/it]Evaluating:  56%|█████▌    | 112/200 [07:09<07:59,  5.45s/it]Evaluating:  57%|█████▊    | 115/200 [07:11<03:57,  2.79s/it]Evaluating:  58%|█████▊    | 116/200 [07:14<03:59,  2.85s/it]Evaluating:  58%|█████▊    | 117/200 [07:19<04:30,  3.25s/it]Evaluating:  60%|█████▉    | 119/200 [07:26<04:36,  3.42s/it]Evaluating:  60%|██████    | 120/200 [07:31<04:57,  3.72s/it]Evaluating:  60%|██████    | 121/200 [07:34<04:41,  3.56s/it]Evaluating:  61%|██████    | 122/200 [07:39<05:01,  3.86s/it]Evaluating:  62%|██████▏   | 123/200 [07:40<04:10,  3.25s/it]Evaluating:  62%|██████▏   | 124/200 [07:53<07:31,  5.94s/it]Evaluating:  64%|██████▎   | 127/200 [07:55<03:39,  3.00s/it]Evaluating:  64%|██████▍   | 128/200 [08:08<06:14,  5.21s/it]Evaluating:  66%|██████▌   | 131/200 [08:10<03:27,  3.01s/it]Evaluating:  66%|██████▌   | 132/200 [08:11<03:06,  2.74s/it]Evaluating:  66%|██████▋   | 133/200 [08:16<03:21,  3.01s/it]Evaluating:  67%|██████▋   | 134/200 [08:17<02:56,  2.68s/it]Evaluating:  68%|██████▊   | 135/200 [08:22<03:23,  3.14s/it]Evaluating:  68%|██████▊   | 136/200 [08:26<03:45,  3.52s/it]Evaluating:  68%|██████▊   | 137/200 [08:29<03:33,  3.39s/it]Evaluating:  69%|██████▉   | 138/200 [08:32<03:24,  3.30s/it]Evaluating:  70%|██████▉   | 139/200 [08:40<04:40,  4.60s/it]Evaluating:  70%|███████   | 140/200 [08:45<04:36,  4.61s/it]Evaluating:  71%|███████   | 142/200 [08:52<03:58,  4.11s/it]Evaluating:  72%|███████▏  | 144/200 [08:53<02:36,  2.80s/it]Evaluating:  72%|███████▎  | 145/200 [08:57<02:37,  2.86s/it]Evaluating:  73%|███████▎  | 146/200 [08:58<02:17,  2.55s/it]Evaluating:  74%|███████▎  | 147/200 [09:04<03:06,  3.52s/it]Evaluating:  74%|███████▍  | 148/200 [09:11<03:50,  4.42s/it]Evaluating:  74%|███████▍  | 149/200 [09:13<03:05,  3.64s/it]Evaluating:  75%|███████▌  | 150/200 [09:15<02:33,  3.07s/it]Evaluating:  76%|███████▌  | 151/200 [09:20<02:56,  3.61s/it]Evaluating:  76%|███████▌  | 152/200 [09:24<03:06,  3.88s/it]Evaluating:  78%|███████▊  | 155/200 [09:27<01:43,  2.29s/it]Evaluating:  78%|███████▊  | 156/200 [09:33<02:13,  3.03s/it]Evaluating:  78%|███████▊  | 157/200 [09:41<02:58,  4.15s/it]Evaluating:  79%|███████▉  | 158/200 [09:44<02:42,  3.87s/it]Evaluating:  80%|███████▉  | 159/200 [09:48<02:46,  4.06s/it]Evaluating:  80%|████████  | 160/200 [09:50<02:14,  3.37s/it]Evaluating:  80%|████████  | 161/200 [09:55<02:24,  3.71s/it]Evaluating:  81%|████████  | 162/200 [10:02<02:57,  4.66s/it]Evaluating:  82%|████████▏ | 164/200 [10:03<01:44,  2.92s/it]Evaluating:  82%|████████▎ | 165/200 [10:05<01:30,  2.59s/it]Evaluating:  83%|████████▎ | 166/200 [10:09<01:40,  2.94s/it]Evaluating:  84%|████████▎ | 167/200 [10:12<01:37,  2.96s/it]Evaluating:  84%|████████▍ | 168/200 [10:16<01:48,  3.40s/it]Evaluating:  84%|████████▍ | 169/200 [10:22<02:09,  4.17s/it]Evaluating:  86%|████████▌ | 171/200 [10:30<01:56,  4.00s/it]Evaluating:  87%|████████▋ | 174/200 [10:38<01:26,  3.31s/it]Evaluating:  88%|████████▊ | 176/200 [10:43<01:13,  3.04s/it]Evaluating:  88%|████████▊ | 177/200 [10:46<01:09,  3.02s/it]Evaluating:  89%|████████▉ | 178/200 [10:54<01:30,  4.12s/it]Evaluating:  90%|█████████ | 180/200 [10:59<01:11,  3.59s/it]Evaluating:  90%|█████████ | 181/200 [11:10<01:36,  5.09s/it]Evaluating:  92%|█████████▏| 183/200 [11:12<00:59,  3.48s/it]Evaluating:  92%|█████████▏| 184/200 [11:17<01:00,  3.79s/it]Evaluating:  92%|█████████▎| 185/200 [11:24<01:10,  4.71s/it]Evaluating:  94%|█████████▍| 188/200 [11:26<00:31,  2.63s/it]Evaluating:  94%|█████████▍| 189/200 [11:42<00:57,  5.26s/it]Evaluating:  96%|█████████▌| 191/200 [11:44<00:33,  3.69s/it]Evaluating:  96%|█████████▌| 192/200 [11:49<00:32,  4.05s/it]Evaluating:  96%|█████████▋| 193/200 [11:51<00:24,  3.48s/it]Evaluating:  97%|█████████▋| 194/200 [11:52<00:18,  3.00s/it]Evaluating:  98%|█████████▊| 195/200 [11:57<00:17,  3.46s/it]Evaluating:  98%|█████████▊| 197/200 [12:02<00:09,  3.02s/it]Evaluating:  99%|█████████▉| 198/200 [12:09<00:07,  3.84s/it]Evaluating: 100%|██████████| 200/200 [12:11<00:00,  2.72s/it]Evaluating: 100%|██████████| 200/200 [12:11<00:00,  3.66s/it]
+
+📊 Kết quả RAGAS — Prompt V2:
+  faithfulness                  : 0.8548 ⭐
+  answer_relevancy              : 0.9095
+  context_recall                : 0.9800
+  context_precision             : 0.9800
+
+=================================================================
+  Metric                                V1        V2  Winner
+=================================================================
+  faithfulness                      0.9135    0.8548  ← V1
+  answer_relevancy                  0.9133    0.9095  ← V1
+  context_recall                    0.9800    0.9800  ← V2
+  context_precision                 0.9683    0.9800  ← V2
+
+✅ Đạt mục tiêu: faithfulness = 0.9135 ≥ 0.8
+💾 Đã lưu báo cáo vào C:\Users\tuan\Desktop\K4-L3-DAY22-NguyenMinhTuan-2A202602850-LLMOpsPromptVersioning\data\ragas_report.json

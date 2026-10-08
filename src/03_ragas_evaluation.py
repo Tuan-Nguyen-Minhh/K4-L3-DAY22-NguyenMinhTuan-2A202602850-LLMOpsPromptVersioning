@@ -33,6 +33,7 @@ from ragas.metrics import faithfulness, answer_relevancy, context_recall, contex
 from ragas.run_config import RunConfig
 
 from utils.llm_factory import get_llm, get_embeddings
+from utils.ragas_llm_adapter import wrap_for_ragas
 from utils.data_loader import load_knowledge_base, split_text, build_vectorstore
 from qa_pairs import QA_PAIRS
 
@@ -68,10 +69,7 @@ def setup_vectorstore():
     """Tái sử dụng — tạo FAISS vectorstore từ knowledge base."""
     embeddings  = get_embeddings()
     text        = load_knowledge_base()
-    # chunk_size=600 → 79 chunks (thay vì 107 chunks khi dùng 500).
-    # Gemini free tier chỉ cho 100 text/phút với embeddings, nên 107 chunks
-    # sẽ luôn vượt quota; 79 chunks nằm dưới trần.
-    chunks      = split_text(text, chunk_size=600, chunk_overlap=60)
+    chunks      = split_text(text)
     return build_vectorstore(chunks, embeddings)
 
 
@@ -169,14 +167,16 @@ def run_ragas_eval(rag_results: list, version: str) -> dict:
     # Tạo EvaluationDataset từ rag_results
     dataset = build_ragas_dataset(rag_results)
 
-    # LLM và Embeddings riêng để RAGAS dùng làm evaluator
-    llm_eval = get_llm(temperature=0)
+    # LLM và Embeddings riêng để RAGAS dùng làm evaluator.
+    # wrap_for_ragas: bóc markdown fence và gọi lẻ từng prompt, nép lỗi
+    # langchain-mistralai `_combine_llm_outputs` khi RAGAS sinh n=3.
+    llm_eval = wrap_for_ragas(get_llm(temperature=0))
     emb_eval = get_embeddings()
 
     # Gọi evaluate() với đầy đủ 4 metrics
     # max_workers: RAGAS mặc định 16 worker song song → vượt giới hạn in-flight
     # của OpenRouter (lỗi 402 in_flight_budget_exhausted) → mọi điểm ra NaN.
-    run_config = RunConfig(max_workers=2, max_retries=10, max_wait=30)
+    run_config = RunConfig(max_workers=8, max_retries=10, max_wait=30)
 
     result = evaluate(
         dataset,
